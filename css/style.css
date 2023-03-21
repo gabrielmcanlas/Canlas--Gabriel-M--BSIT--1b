@@ -1,85 +1,82 @@
 @font-face {
     font-family: Gasalt-Black;
-    src: url(../font/Gasalt-Black.ttf);
-}
-
-
-
-body{
-    background-color: lightgrey;
-    margin: 100px;
-    font-family: Arial, Arial, Helvetica, sans-serif;
-}
-.content{
-    margin: 100px;
-    margin-left: 300px;
-    display: grid;
-	justify-items: center;
-	width: 50%;
-	height: 55vh;
-	background-color: white;
-	padding: 30px;
-
-	box-shadow:  0 0 10px  rgba(0,0,0,0.2);
-}
-
-.profile-picture{
-
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 140px;
-    height: 140px;
-    border-radius: 100px;
-    text-align: center;
-    font-weight: 100;
-
-}
-
-.name{
-
+    src: url(fonts/Gasalt-Black.ttf);
+    font-family: Gasalt-Thin;
+    src: url(fonts/Gasalt-Thin.ttf);
+    font-family: Gasalt-Regular;
+    src: url(fonts/Gasalt-Regular.ttf);
+  }
+  
+  body{
+      background-color: rgb(138, 131, 131);
+      font-family: Gasalt-Thin;
+  }
+  .container {
+    padding: 115px;
+    margin-inline: 90px ;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: rgb(255, 255, 255);  
+  }
+  .profile-picture{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-inline: 420px ;
+    
+  }
+  .fb-logo{
+    display: flex;
+    position: relative;
+    width: 30px;
+    height: 30px; 
+    padding-inline-start: 0px;
+  }
+  .name{
+    display: center;
+    position: relative;
+    padding-inline-start: 30%;
+    padding-inline-end: 5%;
     font-family: Gasalt-Black;
-    text-transform: uppercase;
+  }
+  .bio{
+    margin-inline: 0px ;
     text-align: center;
-    margin-bottom: 15px;
-    font-color:darkslategray;
-    font-weight: 600px;
-}
-
-.bio{
-
-    text-align: center;
-}
-
-.social-link{
-    
-    
-    padding-top: 15px;
-	font-family: Arial;
-	font-weight: 600;
-	color:#59b1f1;
-	width: 500px;
-	text-decoration: none;
-	border-radius: 10px;
-    text-align: center;
-   
-
-}
-
-.social-link:hover{
-
-    
-    width: 500px;
-	background-color: #59b1f1;
-	text-align: center;
-	color: white;
-    
-    border-radius: 50px;
-	
-	
-
-}
-
-.social-icon{
-    width: 15px;
-}
+    font-family: Gasalt-Thin;
+  }
+  .link {
+    display: inline-block;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 100px;
+    position: relative;
+    margin-left: 35%;
+    height: 10px;
+    margin-top: 20px;
+  }
+  .fb-logo{
+    width: 25px;
+    height: 26px;
+    border-radius: 25%;
+    margin-right: 250px;
+    transform: translateY(-50%);
+    margin-top: 5px;
+    text-align:left;
+    margin-left: 10px;
+  }
+  .link-text {
+    position:absolute;
+    text-align: justify;
+    top: 13px;
+    transform: translateY(-50%);
+    left: 45px;
+    font-family: Gasalt-Thin;
+  }
+  .link:hover {
+    background-color: #4267B2;
+    color: #ffffff;
+    border: 0px solid #4267B2;
+  }
+  .link:hover .social-text {
+    color: #ffffff;
+  }
